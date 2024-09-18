@@ -1,0 +1,83 @@
+.contenedor
+{
+ background-color: aqua;
+ padding: 10px;
+ font-size: 25px;
+ text-align: center;
+ grid-gap: 10px;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 1fr 1fr 7fr 1fr;
+ grid-template-areas: "cabecera cabecera cabecera"
+                      "menu menu menu"   
+                       "contenido contenido  publi"
+                            " pie pie pie ";
+}
+.contenedor>div
+{
+   background-color: chartreuse;
+}
+.contenedor .cabecera
+{
+   background-color: rgb(185, 239, 36);
+   grid-column: cabecera;
+}
+.contenedor .menu
+{
+   background-color: cadetblue;
+   grid-column: menu;
+   
+}
+.contenedor .contenido
+{
+   background-color: bisque;
+   text-align: center;
+   padding: 10px;
+   font-size: 30px;
+   grid-column: contenido;
+   
+   grid-gap: 10px;
+   display: grid;
+   grid-template-columns: 1fr 1fr  ;
+   grid-template-rows: 2fr 7fr 2fr ;
+   grid-template-areas: "texto texto1";
+}
+.contenido .texto{
+   background-color: coral;
+   grid-column: texto;
+}
+.contenido .texto1{
+   background-color: coral;
+   grid-column: texto1;
+}
+.contenedor .publi
+{
+   background-color: crimson;
+   text-align: center;
+   padding: 10px;
+   font-size: 25px;
+   grid-column: publi;
+   grid-gap: 10px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1 fr  ;
+   grid-template-rows: 2fr  2fr 2fr;
+   grid-template-areas: "publi1 "     
+                         "publi2";
+   
+}
+.publi .publi1
+{
+   background-color: darkorchid;
+   grid-column: publi1;
+}
+
+.publi .publi2
+{
+   background-color: darkorchid;
+   grid-row: publi2;
+}
+.contenedor .pie
+{
+   background-color: rgb(242, 140, 39);
+   grid-column: pie;
+}
